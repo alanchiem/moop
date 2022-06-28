@@ -10,12 +10,12 @@ import AVKit
 
 
 
-let defaultTimeRemaining: CGFloat = 1800
-let breakTime: CGFloat = 300
+let defaultTimeRemaining: CGFloat = 10//1800
+let breakTime: CGFloat = 3//300
 let lineWidth: CGFloat = 7
 let radius: CGFloat = 150
 
-// adding comment to test commit again 23
+// adding comment to test commit again 41
 let breakColor: Color = Color.init(red: 249/255, green: 235/255, blue: 122/255)
 let workColor: Color = Color.init(red: 101/255, green: 252/255, blue: 244/255)
 let buttonColor: Color = Color.init(red: 1, green: 1, blue: 1)
@@ -74,7 +74,7 @@ struct ContentView: View {
                     // change color 22:50
                     .stroke(timeRemaining > breakTime ? workColor : Color.black, style: StrokeStyle(lineWidth: timeRemaining > breakTime ? lineWidth : lineWidth + 1, lineCap: .butt))
                     .rotationEffect(.degrees(-90))
-                
+                    .animation(.easeInOut)
 
 
                
@@ -104,9 +104,9 @@ struct ContentView: View {
                 timeRemaining = defaultTimeRemaining
                 
             }
-            if breakTime == timeRemaining || timeRemaining == 0 {
-                SoundManager.instance.playSound()
-            }
+//            if breakTime == timeRemaining || timeRemaining == 0 {
+//                SoundManager.instance.playSound()
+//            }
             
         })
         }
