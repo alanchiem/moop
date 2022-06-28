@@ -6,8 +6,8 @@ I needed something simple, effective, and visually pleasing so I made it myself.
 
 ## Features
 - soft bell sound to signal start of break/work
-- removes status bar
 - automatically resets pomodoro round for you
+- removes status bar
 
 The timer is shortened below for demonstration purposes. Normally, you would focus for 25 minutes and take a break for 5 minutes.
 
