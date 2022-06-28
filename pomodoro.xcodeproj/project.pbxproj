@@ -16,6 +16,7 @@
 		E74CF170284FF5DB00A836D7 /* pomodoroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74CF16F284FF5DB00A836D7 /* pomodoroTests.swift */; };
 		E74CF17A284FF5DB00A836D7 /* pomodoroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74CF179284FF5DB00A836D7 /* pomodoroUITests.swift */; };
 		E74CF17C284FF5DB00A836D7 /* pomodoroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74CF17B284FF5DB00A836D7 /* pomodoroUITestsLaunchTests.swift */; };
+		E751C96028517656000C61F4 /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E751C95F28517656000C61F4 /* bell.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		E74CF175284FF5DB00A836D7 /* pomodoroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pomodoroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74CF179284FF5DB00A836D7 /* pomodoroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pomodoroUITests.swift; sourceTree = "<group>"; };
 		E74CF17B284FF5DB00A836D7 /* pomodoroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pomodoroUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E74CF1882851382D00A836D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E751C95F28517656000C61F4 /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +101,13 @@
 		E74CF158284FF5D900A836D7 /* pomodoro */ = {
 			isa = PBXGroup;
 			children = (
+				E74CF1882851382D00A836D7 /* Info.plist */,
 				E74CF159284FF5D900A836D7 /* pomodoroApp.swift */,
 				E74CF15B284FF5D900A836D7 /* ContentView.swift */,
 				E74CF15D284FF5DB00A836D7 /* Assets.xcassets */,
 				E74CF162284FF5DB00A836D7 /* Persistence.swift */,
 				E74CF164284FF5DB00A836D7 /* pomodoro.xcdatamodeld */,
+				E751C95F28517656000C61F4 /* bell.mp3 */,
 				E74CF15F284FF5DB00A836D7 /* Preview Content */,
 			);
 			path = pomodoro;
@@ -239,6 +244,7 @@
 			files = (
 				E74CF161284FF5DB00A836D7 /* Preview Assets.xcassets in Resources */,
 				E74CF15E284FF5DB00A836D7 /* Assets.xcassets in Resources */,
+				E751C96028517656000C61F4 /* bell.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,11 +436,13 @@
 				DEVELOPMENT_TEAM = N7XTJ3T26Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = pomodoro/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = pomodoro;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,7 +452,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -459,11 +467,13 @@
 				DEVELOPMENT_TEAM = N7XTJ3T26Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = pomodoro/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = pomodoro;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,7 +483,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
