@@ -10,8 +10,8 @@ import AVKit
 
 
 
-let defaultTimeRemaining: CGFloat = 1800
-let breakTime: CGFloat = 300
+let defaultTimeRemaining: CGFloat = 18
+let breakTime: CGFloat = 3
 let lineWidth: CGFloat = 7
 let radius: CGFloat = 150
 
@@ -73,7 +73,7 @@ struct ContentView: View {
                     // change color 22:50
                     .stroke(timeRemaining > breakTime ? workColor : Color.black, style: StrokeStyle(lineWidth: timeRemaining > breakTime ? lineWidth : lineWidth + 1, lineCap: .butt))
                     .rotationEffect(.degrees(-90))
-                    .animation(.easeInOut)
+                    .animation(.easeInOut, value: timeRemaining)
 
 
                
